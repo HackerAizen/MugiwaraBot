@@ -6,7 +6,7 @@ from openai import OpenAI
 
 client = OpenAI(
     # This is the default and can be omitted
-    api_key="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",
+    api_key="",
 )
 
 class gpt_cog(commands.Cog):
