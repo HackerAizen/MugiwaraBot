@@ -96,6 +96,7 @@ async def on_message(message):
 
             if data[str(message.author.id)]['WARNS'] >= 5:
                 await message.author.ban(reason="Превышено допустимое кол-во нарушений на сервере.")
+            break
     
     if message.content.isupper():
         with open('users.json', 'r') as file:
