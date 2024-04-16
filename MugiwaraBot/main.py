@@ -16,9 +16,7 @@ from quizfolder.question import Question
 from quizfolder.visuals import optionsVisual, resultsVisual
 
 from cogs.music_cog import music_cog
-# from cogs.translate_cog import translate_cog
 from cogs.gpt_cog import gpt_cog
-# from cogs.help_cog import help_cog
 from cogs.poll_cog import Poll
 
 # командный префикс и подключение всех зависимостей для бота
@@ -37,7 +35,6 @@ async def on_ready():
 
     # await bot.tree.sync()
     await bot.add_cog(music_cog(bot))
-    # await bot.add_cog(translate_cog(bot))
     await bot.add_cog(gpt_cog(bot))
     await bot.add_cog(Poll(bot))
 

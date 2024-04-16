@@ -5,7 +5,7 @@ import asyncio
 from openai import OpenAI
 
 client = OpenAI(
-    # This is the default and can be omitted
+    # This is the default and can be omitted, Write your own key here
     api_key="",
 )
 
