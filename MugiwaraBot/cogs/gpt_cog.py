@@ -1,12 +1,13 @@
 import discord
 from discord.ext import commands
 import asyncio
+import constants
 
 from openai import OpenAI
 
 client = OpenAI(
-    # This is the default and can be omitted, Write your own key here
-    api_key="",
+    # This is the default and can be omitted
+    api_key=constants.API_KEY,
 )
 
 class gpt_cog(commands.Cog):
